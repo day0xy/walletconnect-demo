@@ -19,9 +19,6 @@ const metadata = {
 const chains = [mainnet, sepolia, holesky, polygon] as const;
 export const config = defaultWagmiConfig({
   chains,
-  // transports: {
-  //     [sepolia.id]: http()
-  // },
   projectId,
   metadata,
   auth: {
